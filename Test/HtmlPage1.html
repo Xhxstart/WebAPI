@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Index2</title>
+    <script src="/Scripts/jquery-1.4.4。js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var login = function () {
+            var data = { "username": $.trim($("#username").val()), "pwd": $.trim($("#pwd").val()) }
+
+            //            $.post("/Home/Login", data, function (message) {
+            //                if (message.success) {
+            //                    alert(message.msg);
+            //                }
+            //                else {
+            //                    alert(message.msg);
+            //                }
+            //            }, "json");
+
+            $.ajax({
+                type: "post", url: "/Home/Login", data: data, success: function (message) {
+                    if (message.Success) {
+                        alert(message.Msg);
+                    }
+                    else {
+                        alert(message.Msg);
+                    }
+                }, dataType: "json"
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="nav">
+        <a href="/Home/Index">ajax+Handler</a>  <a>ajax+action</a>
+    </div>
+    <div>
+        <h3>
+            Login
+        </h3>
+        Username:<input id="username" name="username" type="text" /><br />
+        Userpass:<input id="pwd" name="pwd" type="password" /><br />
+        <button type="button" onclick="login()">
+            Submit
+        </button>
+    </div>
+</body>
+</html>  
