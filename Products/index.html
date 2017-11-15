@@ -1,0 +1,79 @@
+﻿<html>
+<head runat="server">
+    <title>Index2</title>
+    <script src="..\Scripts\jquery-1.10.2.min.js" type="text/javascript"> </script>
+    <script type="text/javascript">
+        var formatid;
+        var reportid;
+        var uri;
+        $(document).ready(function () {
+            function setInitCondCtrl() {
+                formatid = $("#format_id").val();
+                reportid = $("#report_id").val();
+                uri = $("#dtSc00001").val();
+            };
+            $("#login").click(function () {
+                setInitCondCtrl();
+                var jsonData = { 'FormatId': '000000005', 'ReportId': '000000001', 'to_reportplus': '1', 'action_type': 'C' };
+                $.ajax({
+                    type: "post", url: uri, data: JSON.stringify(jsonData), dataType: "json", contentType: 'application/json',
+                    success: function (data) {
+                        var jsonText = JSON.stringify(data);
+                        alert(jsonText);
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        alert(XMLHttpRequest.status);
+                        alert(XMLHttpRequest.readyState);
+                        alert(textStatus);
+                    }
+                });
+            });
+            $("#Update").click(function () {
+                setInitCondCtrl();
+                var jsonData = { 'FormatId': formatid, 'ReportId': reportid };
+                $.ajax({
+                    type: "put", url: uri, data: JSON.stringify(jsonData), dataType: "json", contentType: 'application/json',
+                    success: function (data) {
+                        var jsonText = JSON.stringify(data);
+                        alert(jsonText);
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+            });
+            $("#Delete").click(function () {
+                setInitCondCtrl();
+                var jsonData = { 'FormatId': formatid, 'ReportId': reportid };
+                $.ajax({
+                    type: "delete", url: uri, data: JSON.stringify(jsonData), dataType: "json", contentType: 'application/json',
+                    success: function (data) {
+                        var jsonText = JSON.stringify(data);
+                        alert(jsonText);
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="nav">
+        <a href="/Home/Index">ajax+Handler</a>  <a>ajax+action</a>
+    </div>
+    <div>
+        <h3>
+            Login
+        </h3>
+        フォーマットID:<input id="format_id" type="text" /><br />
+        レポートID:<input id="report_id" type="text" /><br />
+        ＵＲＬ:<input id="dtSc00001" type="text" /><br />
+        jsonファイル:<input id="clSc00004" type="text" />
+        <button type="button" id="login" value=""> 登録 </button>
+        <button type="button" id="Update" value=""> 更新</button>
+        <button type="button" id="Delete" value="">削除 </button>
+    </div>
+</body>
+</html>  

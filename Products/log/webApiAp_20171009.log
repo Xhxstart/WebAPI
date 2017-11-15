@@ -1,0 +1,33 @@
+2017-10-09 16:04:06,504 [10] RenkeiCommon.Renkei.Run - [INFO ] Renkei#Run() Start
+2017-10-09 16:04:30,373 [10] RenkeiCommon.Utility.GetKayisakuData - [DEBUG] Utility#GetMstRenkeiBatchJikkouRireikiTbl() Start
+2017-10-09 16:04:30,419 [10] RenkeiCommon.DbAccess.Reader - [DEBUG] SQL文：SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-09 16:04:30,424 [10] RenkeiCommon.DbAccess.<OutputParameters>b__17_1 - [DEBUG] SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-09 16:04:30,451 [10] RenkeiCommon.DbAccess.<OutputParameters>b__17_1 - [DEBUG] SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-09 16:04:30,478 [10] RenkeiCommon.Utility.GetKayisakuData - [DEBUG] Utility#GetMstRenkeiBatchJikkouRireikiTbl() End
+2017-10-09 16:04:30,481 [10] RenkeiCommon.Renkei.Run - [DEBUG] Renkei#GetMasterMapping() End
+2017-10-09 16:04:30,482 [10] RenkeiCommon.Renkei.CreateReportJsonData - [DEBUG] Renkei#CreateReportJsonData() Start
+2017-10-09 16:04:30,483 [10] RenkeiCommon.Renkei.CreateReportJsonData - [DEBUG] Renkei#CreateReportJsonData() End
+2017-10-09 16:04:30,484 [10] RenkeiCommon.Utility.ReqUpdReport - [INFO ] Utility#ReqUpdReportMaster() Start
+2017-10-09 16:04:31,799 [10] RenkeiCommon.Utility.OutputMessageErrorHttp - [ERROR] 
+2017-10-09 16:04:31,800 [10] RenkeiCommon.Utility.OutputMessageErrorHttp - [ERROR] リモート サーバーがエラーを返しました: (400) 要求が不適切です
+2017-10-09 16:04:31,802 [10] RenkeiCommon.Utility.OutputMessageErrorHttp - [ERROR]    場所 System.Net.HttpWebRequest.GetResponse()
+   場所 RenkeiCommon.Utility.ReqUpdReport(String formatId, String reportId, String request) 場所 D:\Tools\Products\RenkeiCommon\Utility.cs:行 222
+2017-10-09 16:04:31,802 [10] RenkeiCommon.Utility.OutputMessageErrorHttp - [ERROR] {Connection, Content-Length, Content-Type, Date}
+2017-10-09 16:04:31,807 [10] Products.Controllers.ProductsController.GetAllProducts - [ERROR] RenkeiCommon.Api.HttpException: 種類 'RenkeiCommon.Api.HttpException' の例外がスローされました。
+   場所 RenkeiCommon.Utility.ReqUpdReport(String formatId, String reportId, String request) 場所 D:\Tools\Products\RenkeiCommon\Utility.cs:行 271
+   場所 RenkeiCommon.Renkei.Run(String[] args) 場所 D:\Tools\Products\RenkeiCommon\Renkei.cs:行 138
+   場所 Products.Controllers.ProductsController.GetAllProducts(Product Request) 場所 D:\Tools\Products\Products\Controllers\ProductsController.cs:行 40
+2017-10-09 16:20:51,656 [11] RenkeiCommon.Renkei.Run - [INFO ] Renkei#Run() Start
+2017-10-09 16:23:04,474 [11] RenkeiCommon.Utility.GetKayisakuData - [DEBUG] Utility#GetMstRenkeiBatchJikkouRireikiTbl() Start
+2017-10-09 16:23:06,619 [11] RenkeiCommon.DbAccess.Reader - [DEBUG] SQL文：SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-09 16:23:06,621 [11] RenkeiCommon.DbAccess.<OutputParameters>b__17_1 - [DEBUG] SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-09 16:23:06,622 [11] RenkeiCommon.DbAccess.<OutputParameters>b__17_1 - [DEBUG] SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-09 16:23:08,184 [11] RenkeiCommon.Utility.GetKayisakuData - [DEBUG] Utility#GetMstRenkeiBatchJikkouRireikiTbl() End
+2017-10-09 16:23:47,258 [11] RenkeiCommon.Renkei.Run - [DEBUG] Renkei#GetMasterMapping() End
+2017-10-09 16:23:47,855 [11] RenkeiCommon.Renkei.CreateReportJsonData - [DEBUG] Renkei#CreateReportJsonData() Start
+2017-10-09 16:23:47,900 [11] RenkeiCommon.Renkei.CreateReportJsonData - [DEBUG] Renkei#CreateReportJsonData() End
+2017-10-09 16:23:48,488 [11] RenkeiCommon.Utility.ReqUpdReport - [INFO ] Utility#ReqUpdReportMaster() Start
+2017-10-09 16:23:50,520 [11] RenkeiCommon.Utility.ReqUpdReport - [INFO ] http://win2012srv/kaisakuapi/v1/formats/000000005/reports/000000001
+2017-10-09 16:23:50,521 [11] RenkeiCommon.Utility.ReqUpdReport - [INFO ] {"report_id":"000000001","last_update_date":"2017-10-09T16:24:27+09:00"}
+2017-10-09 16:23:50,521 [11] RenkeiCommon.Utility.ReqUpdReport - [INFO ] Utility#ReqUpdReportMaster() End
+2017-10-09 16:23:51,259 [11] RenkeiCommon.Renkei.Run - [INFO ] Renkei#Run() End

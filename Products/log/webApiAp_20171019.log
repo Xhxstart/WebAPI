@@ -1,0 +1,14 @@
+2017-10-19 18:45:25,125 [6] RenkeiCommon.Renkei.Run - [INFO ] Renkei#Run() Start
+2017-10-19 18:47:35,434 [6] RenkeiCommon.Utility.GetKayisakuData - [DEBUG] Utility#GetMstRenkeiBatchJikkouRireikiTbl() Start
+2017-10-19 18:47:35,482 [6] RenkeiCommon.DbAccess.Reader - [DEBUG] SQLï∂ÅFSELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-19 18:47:35,485 [6] RenkeiCommon.DbAccess.<OutputParameters>b__17_1 - [DEBUG] SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-19 18:47:35,486 [6] RenkeiCommon.DbAccess.<OutputParameters>b__17_1 - [DEBUG] SELECT * FROM VIEW_REPORT WHERE FORMAT_ID = @formatId AND REPORT_ID = @reportId
+2017-10-19 18:47:35,507 [6] RenkeiCommon.Utility.GetKayisakuData - [DEBUG] Utility#GetMstRenkeiBatchJikkouRireikiTbl() End
+2017-10-19 18:47:35,589 [6] RenkeiCommon.Renkei.Run - [DEBUG] Renkei#GetMasterMapping() End
+2017-10-19 18:47:35,589 [6] RenkeiCommon.Renkei.CreateReportJsonData - [DEBUG] Renkei#CreateReportJsonData() Start
+2017-10-19 18:47:35,603 [6] RenkeiCommon.Renkei.CreateReportJsonData - [DEBUG] Renkei#CreateReportJsonData() End
+2017-10-19 18:47:35,604 [6] RenkeiCommon.Utility.ReqUpdReport - [INFO ] Utility#ReqUpdReportMaster() Start
+2017-10-19 18:47:39,668 [6] RenkeiCommon.Utility.ReqUpdReport - [INFO ] http://win2012srv/kaisakuapi/v1/formats/000000005/reports/000000001
+2017-10-19 18:47:39,669 [6] RenkeiCommon.Utility.ReqUpdReport - [INFO ] {"report_id":"000000001","last_update_date":"2017-10-19T18:48:18+09:00"}
+2017-10-19 18:47:39,669 [6] RenkeiCommon.Utility.ReqUpdReport - [INFO ] Utility#ReqUpdReportMaster() End
+2017-10-19 18:47:39,669 [6] RenkeiCommon.Renkei.Run - [INFO ] Renkei#Run() End
