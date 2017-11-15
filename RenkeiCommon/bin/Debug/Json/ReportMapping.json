@@ -1,0 +1,96 @@
+﻿[
+  {
+    "FormatId": "000000006",
+    "Condition": "DEL_FLG = '0'",
+    "Registerkey": "register_key",
+    "TableNm": "VIEW_REPORT_DATA",
+    "RootPath": "C:\\BusinessPlus\\Application\\BusinessPlus\\KokyakukanriImages",
+    "Report_data": "report_data",
+    "ReportInfo": {
+      "BaseData": [
+        {
+          "ColumnNm": "USER_ID",
+          "RefReportDataKey": "user_id"
+        },
+        {
+          "ColumnNm": "KOMENTO",
+          "RefReportDataKey": "report_comment"
+        }
+      ],
+      "ReportData": [
+        {
+          "RefReportDataKey": "日付",
+          "ColumnNm": "TAIO_DATE"
+        }
+      ]
+    }
+  },
+  {
+    "FormatId": "000000005",
+    "Condition": "DEL_FLG = '0'",
+    "Registerkey": "register_key",
+    "TableNm": "VIEW_REPORT_DATA",
+    "RootPath": "C:\\BusinessPlus\\Application\\BusinessPlus\\KokyakukanriImages",
+    "Report_data": "report_data",
+    "ReportInfo": {
+      "BaseData": [
+        {
+          "ColumnNm": "USER_ID",
+          "RefReportDataKey": "user_id"
+        },
+        {
+          "ColumnNm": "KOMENTO",
+          "RefReportDataKey": "report_comment"
+        }
+      ],
+      "ReportData": [
+        {
+          "RefReportDataKey": "担保有無_担保内容_その他",
+          "ColumnNm": "TANPO5_BIKO"
+        }
+      ],
+      "ImageData": [
+        [
+          {
+            "ColumnNm": "IMAGE_NM1",
+            "RefReportDataKey": "name"
+          },
+          {
+            "ColumnNm": "KOKYAKUKANRI_NO1",
+            "RefReportDataKey": "data"
+          }
+        ],
+        [
+          {
+            "ColumnNm": "IMAGE_NM2",
+            "RefReportDataKey": "name"
+          },
+          {
+            "ColumnNm": "KOKYAKUKANRI_NO2",
+            "RefReportDataKey": "data"
+          }
+        ],
+        [
+          {
+            "ColumnNm": "IMAGE_NM3",
+            "RefReportDataKey": "name"
+          },
+          {
+            "ColumnNm": "KOKYAKUKANRI_NO3",
+            "RefReportDataKey": "data"
+          }
+        ],
+        [
+          {
+            "ColumnNm": "IMAGE_NM4",
+            "RefReportDataKey": "name"
+          },
+          {
+            "ColumnNm": "KOKYAKUKANRI_NO4",
+            "RefReportDataKey": "data"
+          }
+        ]
+      ]
+    }
+  }
+]
